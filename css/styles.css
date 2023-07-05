@@ -1,0 +1,93 @@
+h1{
+    text-align: center;
+    color: #00ff1f;
+    font-family: verdana, sans-serif;
+}
+/* form styles */
+form {
+    line-height: 3.5;
+    width: 60%;
+    margin: auto;
+}
+
+/* input styles */
+.in {
+    width: 75%;
+    padding: 8px;
+    border: 2px inset powderblue;
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+
+.in:hover, .in:focus {
+    border: 2px inset rgb(231, 213, 108);
+    border-radius: 10px;
+    outline: none; /*predefined outline set to none to make border-visible */
+}
+
+/* label styles */
+.lab {
+    display: inline-block;
+    text-align: left;
+    width: 20%;
+    font-weight: 500;
+    font-family: "Audiowide", sans-serif;
+    /* text-transform: uppercase; */
+}
+
+/* radio button styles */
+input.lang {
+    width: 20px;
+}
+
+/* input submit */
+input[type="submit"] {
+    float: right;
+    margin-left: 20px;
+    padding: 5px;
+    width: 100px;
+    background-color: #e95e5e;
+    color: #fff;
+    font-weight: 900;
+    border: 2px inset powderblue;
+    border-radius: 20px;
+}
+
+/* for smaller screens */
+@media screen and (max-width: 600px){
+    
+    /* form style */
+    form {
+        width: 80%;
+    }
+
+    /* input style */
+    .in {
+
+        width: 100%;
+    }
+
+    /* label style */
+    .lab {
+        display: inline;
+    }
+
+    /* radio vertical style */
+    label.lan {
+        display: inline-block;
+        width: 25%;
+    }
+
+    /* span radio group style */
+    .lan-group {
+        display: inline-block;
+        width: 70%;
+    }
+
+    label.lang {
+        display: inline-block;
+        width: 80%;
+    }
+
+}

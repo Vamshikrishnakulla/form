@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>form tags</title>
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="form validations">
+    <meta name="author" content="self">
+    <!-- <meta http-equiv="refresh" content="10"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h1>Form with all validation checks and is responsive</h1>
+    <form action="#" method="get" autocomplete="on">
+        <label class="lab" for="fname">First name</label>:
+        <input class="in" type="text" id="fname" name="firstname" maxlength="40" required><br>
+        <label class="lab" for="lname">Last name</label>:
+        <input class="in" type="text" id="lname" name="lastname" maxlength="40"><br>
+        <label class="lab" for="dob">DOB</label>:
+        <input class="in" type="date" id="dob" name="DOB" placeholder="Date of Birth" required><br>
+        <label class="lab" for="num">Mobile</label>:
+        <input class="in" type="tel" id="num" name="mobile" maxlength="10" pattern="[6-9]{1}[0-9]{9}" title="Ten digit number"
+            required><br>
+        <label class="lab" for="email">Email</label>:
+        <input class="in" type="email" id="email" name="email" maxlenght="50" required placeholder="someone@email.com"><br>
+        <label class="lab" for="pass">Password</label>:
+        <input class="in" type="password" id="pass" name="password" maxlenght="30" required><br>
+        <label class="lab" for="cpass">CPassword</label>:
+        <input class="in" type="password" id="cpass" name="cpass" required><br>
+
+        <label class="lan lab">Language</label>:
+        <span class="lan-group">
+        <input class="lang" type="radio" id="lan1" name="lan" value="telugu">
+        <label class="lang" for="lan1">Telugu</label>
+        <input class="lang" type="radio" id="lan2" name="lan" value="hindi">
+        <label class="lang" for="lan2">Hindi</label>
+        <input class="lang" type="radio" id="lan3" name="lan" value="english">
+        <label class="lang" for="lan3">English</label></span><br>
+
+        <label class="lab" for="select">Course</label>:
+        <select class="in" id="select" name="course">
+            <option value="cse">CSE</option>
+            <option value="eee">EEE</option>
+            <option value="ece" selected>ECE</option>
+            <option value="civil" disabled>Civil</option>
+        </select><br>
+        <label class="lab" for="textarea">Comments</label>:
+        <textarea id="textarea" class="in" style="height:40px;" ></textarea><br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
